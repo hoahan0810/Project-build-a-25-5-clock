@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-weight:400;
+  font-size: 1.5rem;
+  background-color: #FF9B71;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.clock-app{
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, auto));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 20px;
+}
+
+h1{
+    color: white;
+    grid-column: 1/3;
+    
+}
+
+button{
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+i{
+    font-size: 1.5rem;
+    
+    padding: 3px;
+}
+
+.lengthdisplay, .btn-control{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+
+#breaklengthstyle{
+    grid-column: 1/2;
+    margin-right: 10px;
+}
+
+#sessionlengthstyle{
+    grid-column: 2/3;
+    margin-left: 10px;
+}
+
+.clockdisplay{
+    grid-column: 1/3;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;   
+    font-weight: 700; 
+}
+
+.timelabel{
+    font-size: 2rem;
+    color: white;
+    
+}
+
+.timeleft{
+    font-size: 2.5rem;
+    padding-top: 20px;
+}
+
+.btnbottom{
+    justify-self: center;
+    width: 60px;
+    height: 60px;
+}
